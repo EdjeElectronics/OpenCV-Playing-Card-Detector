@@ -12,11 +12,11 @@ Rank_Suit_Isolator.py is a standalone script that can be used to isolate the ran
 Card_Imgs contains all the train images of the card ranks and suits
 
 ## Dependencies
-OpenCV-Python 3.2.0 and numpy 1.8.2
-```
+OpenCV-Python 3.2.0 and numpy 1.8.2:
+
 See https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/
 for how to build and install OpenCV-Python on the Raspberry Pi
-```
+
 
 picamera library
 ```
