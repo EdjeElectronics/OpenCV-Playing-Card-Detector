@@ -2,9 +2,13 @@
 Python program that uses OpenCV to detect and identify playing cards from a PiCamera video feed on a Raspberry Pi.
 
 CardDetector.py contains the main script
+
 Cards.py has classes and functions that are used by CardDetector.py
+
 PiVideoStream.py creates a video stream from the PiCamera, and is used by CardDetector.py
+
 Rank_Suit_Isolator.py is a standalone script that can be used to isolate the rank and suit from a set of cards to create train images
+
 Card_Imgs contains all the train images of the card ranks and suits
 
 ## Dependencies
