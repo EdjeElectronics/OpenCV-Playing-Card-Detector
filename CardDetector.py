@@ -12,9 +12,8 @@ import numpy as np
 import time
 import os
 import Cards
-import PiVideoStream
-from picamera.array import PiRGBArray # May not have to
-from picamera import PiCamera # include these fellers
+import VideoStream
+
 
 ### ---- INITIALIZATION ---- ###
 # Define constants and initialize variables
@@ -33,8 +32,10 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 
 # Initialize camera object and video feed from the camera. The video stream is set up
 # as a seperate thread that constantly grabs frames from the camera feed. 
-# See PiVideoStream.py for PiVideoStream class definition
-videostream = PiVideoStream.PiVideoStream((IM_WIDTH,IM_HEIGHT),FRAME_RATE).start()
+# See VideoStream.py for VideoStream class definition
+## IF USING USB CAMERA INSTEAD OF PICAMERA,
+## CHANGE THE THIRD ARGUMENT FROM 1 TO 2 IN THE FOLLOWING LINE:
+videostream = VideoStream.VideoStream((IM_WIDTH,IM_HEIGHT),FRAME_RATE,1,0).start()
 time.sleep(1) # Give the camera time to warm up
 
 # Load the train rank and suit images
